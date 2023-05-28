@@ -25,7 +25,6 @@ const storageDest = multer.diskStorage({
 const upload = multer({storage: storageDest})
 
 app.get("/", (req, res) => {
-    
     res.header('Access-Control-Allow-Origin', '*');
     res.send("This is CORS friendly!")
 })
